@@ -24,11 +24,11 @@ int main(){
 
     AB=sqrt(pow(x2-x1, 2)+pow(y2-y1, 2));
     AC=sqrt(pow(x3-x1, 2)+pow(y3-y1, 2));
-    if(AB > AC){
+    if(AB < AC){
         printf("До точки А(%.0f, %.0f) ближча точка B(%.0f, %.0f), відстань між ними - "
                "%.1f", x1, y1, x2, y2, AB);
     }
-    else if(AB < AC){
+    else if(AB > AC){
         printf("До точки А(%.0f, %.0f) ближча точка C(%.0f, %.0f), відстань між ними - "
                "%.1f", x1, y1, x3, y3, AC);
     }
